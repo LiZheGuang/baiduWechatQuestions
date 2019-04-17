@@ -1,0 +1,18 @@
+<view class="question_title">2017年省考笔试达到最低及格线，有机会后补进面试吗？</view>
+<!-- 最佳答案 -->
+<view class="clarity">
+	<view class="clarity_nav">
+		最佳答案
+	</view>
+	<view class="clarity_msg">
+		<view class="text_msg  {{optimumShow ? '' :'hideCss'}}" style=" max-height:{{optimumShow?optimumsHeight:'120rpx'}}"  id="optimum">
+            {{msg}}
+		</view>
+		<view class="right_msg" bindtap="clickOptimumMsg">
+			<view class="readMore">查看全文</view>
+		</view>
+		<view class="right_msg timeFather">
+			<view class="timeClarity">2019-04-16 14:47</view>
+		</view>
+	</view>
+</view>
