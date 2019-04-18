@@ -1,18 +1,124 @@
 <view class="question_title">2017年省考笔试达到最低及格线，有机会后补进面试吗？</view>
 <!-- 最佳答案 -->
 <view class="clarity">
-	<view class="clarity_nav">
-		最佳答案
+
+	<view class="pd">
+
+		<view class="clarity_nav ">
+			最佳答案
+		</view>
+		<view class="clarity_msg">
+			<view class="text_msg  {{optimumShow ? '' :'hideCss'}}" style=" max-height:{{optimumShow?optimumsHeight:'120rpx'}}" id="optimum">
+				{{msg}}
+			</view>
+			<view class="right_msg" bindtap="clickOptimumMsg" s-if="!optimumShow">
+				<view class="readMore">查看全文</view>
+			</view>
+			<view class="right_msg timeFather">
+				<view class="timeClarity">2019-04-16 14:47</view>
+			</view>
+		</view>
 	</view>
-	<view class="clarity_msg">
-		<view class="text_msg  {{optimumShow ? '' :'hideCss'}}" style=" max-height:{{optimumShow?optimumsHeight:'120rpx'}}"  id="optimum">
-            {{msg}}
+
+	<!-- 其他回答 -->
+	<view class="other">
+		<view class="">
+			<view class="other_title pd">
+				3个其他回答
+			</view>
+			<view class="other_msg_b {{optimumShowQita ? '' :'hideCss'}}" style=" max-height:{{optimumShowQita?optimumShowQitaHeight:'250rpx'}}">
+				<view class="boclo pd">
+					<view class="other_top_nav">
+						<view class="other_top_nav_left">
+							<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3308332588,771434319&fm=26&gp=0.jpg"></image>
+						</view>
+						<view class="other_top_nav_right">
+							<view class="other_top_nav_right_t">符红普</view>
+							<view class="other_top_nav_right_msg">2019-04-16 13:01</view>
+						</view>
+					</view>
+					<view class="clarity_msg">
+						<view class="other_msg_btext  fs28" id="optimum">
+							公务员考试笔试成绩发布后根据成绩 排名从高到低确定进入面试名单，不同的 岗位因为竞争力的不同分数会有所不同。 并不是达到某一个分数就一定可以进面试 ，而是要看同岗位其他人的分数，只要排 名靠前才跟有机会进面试。
+						</view>
+					</view>
+				</view>
+
+				<view class="boclo pd">
+					<view class="other_top_nav">
+						<view class="other_top_nav_left">
+							<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3308332588,771434319&fm=26&gp=0.jpg"></image>
+						</view>
+						<view class="other_top_nav_right">
+							<view class="other_top_nav_right_t">符红普</view>
+							<view class="other_top_nav_right_msg">2019-04-16 13:01</view>
+						</view>
+					</view>
+					<view class="clarity_msg">
+						<view class="other_msg_btext  fs28" id="optimum">
+							公务员考试笔试成绩发布后根据成绩 排名从高到低确定进入面试名单，不同的 岗位因为竞争力的不同分数会有所不同。 并不是达到某一个分数就一定可以进面试 ，而是要看同岗位其他人的分数，只要排 名靠前才跟有机会进面试。
+						</view>
+					</view>
+				</view>
+				<view class="boclo pd">
+					<view class="other_top_nav">
+						<view class="other_top_nav_left">
+							<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3308332588,771434319&fm=26&gp=0.jpg"></image>
+						</view>
+						<view class="other_top_nav_right">
+							<view class="other_top_nav_right_t">符红普</view>
+							<view class="other_top_nav_right_msg">2019-04-16 13:01</view>
+						</view>
+					</view>
+					<view class="clarity_msg">
+						<view class="other_msg_btext  fs28" id="optimum">
+							公务员考试笔试成绩发布后根据成绩 排名从高到低确定进入面试名单，不同的 岗位因为竞争力的不同分数会有所不同。 并不是达到某一个分数就一定可以进面试 ，而是要看同岗位其他人的分数，只要排 名靠前才跟有机会进面试。
+						</view>
+					</view>
+				</view>
+
+			</view>
 		</view>
-		<view class="right_msg" bindtap="clickOptimumMsg">
-			<view class="readMore">查看全文</view>
-		</view>
-		<view class="right_msg timeFather">
-			<view class="timeClarity">2019-04-16 14:47</view>
-		</view>
+
+
+
+	</view>
+	<view class="right_msg otherMoreFilexCenter" bindtap="clickqitaOptimumMsg" s-if="!optimumShowQita">
+		<view class="otherMore">查看全部回答</view>
 	</view>
 </view>
+
+<view class="querstion_list_foo">
+
+	<view class="querstion_list">
+		<view class="querstion_list_item">
+			<view class="querstion_list_itemImage">
+				<image src="http://5b0988e595225.cdn.sohucs.com/images/20181208/d3308189576647138ce3a0f817ffcab6.jpeg"></image>
+			</view>
+			<view class="querstion_list_itemImage_r">
+				<view class="querstion_list_itemImage_r_title">您关注的吉利又降价了！价格比想象的更您关注的吉利又降价了！价格比想象的更您关注的吉利又降价了！价格比想象的更</view>
+				<view class="querstion_list_itemImage_r_b">
+					<view class="querstion_list_itemImage_r_b_msg">云和互动</view>
+					<view class="querstion_list_itemImage_r_b_btn rectangle">查看详情</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+</view>
+<view class="chakangengduo">查看更多</view>
+
+<!-- 页脚 -->
+<view class="foo">
+	<button class="home">
+		<image src="../../images/homeClick.png"></image>
+		<text>首页</text>
+	</button>
+
+	<button class="shareClick">
+		<text>分享给朋友</text>
+		<image class="sharePo" src="../../images/shareClick.png"></image>
+	</button>
+</view>
+<!-- 页脚 -->

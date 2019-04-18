@@ -1,3 +1,35 @@
-<view class="container">
-    <!--to do-->
+<view class="content">
+	<text class="title">找工作太难？改不了这3种心理， 你很难找到理想工作！</text>
+	<view class="timemsg">维思迈 04-16 11:48</view>
+	 <view class="msg">
+		又到一年毕业季，很多应届毕业生又开始 为找工作奔波了。很多应届毕业生会觉得 很难找到理想的工作，其实如果你屡次求 职、面试都失败，很可能是因为这些求职 心理在作祟。如果你改不了以下这3种心 理，你很难找到理想工作。
+	</view>
+	<view class="viewShow">
+		<image mode="aspectFit" src="../../images/banner2.jpeg"></image>
+	</view>
+	<view class="bigTitle">1、“落脚地”心理</view>
+	<view class="msg">很多刚毕业的应届生，看见别的同学都找 到工作了，心里就想着自己干脆先找个 “落脚地”，哪怕企业、岗位、工作内容都 不是自己喜欢和擅长的也无所谓。其实， 这样的想法会对求职者未来的职业生涯产 生负面影响。“落脚地”心理从近期来看是
+		有利的，大学生降低了自身的姿态，找到 了工作。但从长远来讲却隐藏了很大的风 险。因为要“落脚”所以随便找个工作，很 多求职者可能就没有再找其他工作的动力 了，还有可能因为不擅长处理相关事务而 在工作中错误不断，从而产生工作挫败 感。一旦让上司发现你在工作中没有积极
+		性，自然也就不会重用你了。
+	</view>
+
+	<view class="viewShow">
+		<image mode="aspectFit" src="../../images/banner1.jpg"></image>
+	</view>
+	<view class="bigTitle">2、“一步到位”心理</view>
+	<view class="msg">有不少有研究生以上学历的求职者，刚出 来工作就期待月薪在5000元以上，他们 认为这是自己“该有”的薪资水平，不肯降 低标准。这是典型的“一步到位”心理，即 希望工作能一蹴而就，马上就能达到自己 理想的状态。可对于招聘企业来说，在还
+		没有看到求职者工作能力的情况下，仅凭 一纸文凭是很难会给出求职者所期望的薪 水。如果你想要拿高薪，那就得通过做好 自己的工作、提升自己的业绩、展示自己 的能力，让上司看到你的价值，到那时再 提涨薪就更顺理成章了，还没开始工作就 提出自己认为合理的薪资是不可行的。
+	</view>
+</view>
+
+<view class="dianzan">
+    <button class="dianzanBtn">
+        <image src="../../images/zanWhite.png"></image>
+        <text>点赞</text>
+    </button>
+</view>
+
+<view class="foo">
+    <button class="foo_b">上一篇</button>
+    <button class="foo_b">下一遍</button>
 </view>

@@ -1,0 +1,66 @@
+.content{
+    padding: 34rpx 35rpx;
+}
+page{
+    padding-bottom: 88rpx;
+}
+.title{
+    font-size: 46rpx;
+    font-weight: 500;
+}
+.timemsg{
+    font-size: 24rpx;
+    color: #cccccc;
+}
+.msg{
+    font-size: 28rpx;
+    line-height: 44rpx;
+}
+.viewShow{
+    width: 100%;
+}
+.viewShow image{
+    width: 100%;
+}
+.bigTitle{
+    margin-bottom: 15rpx;
+}
+.dianzan{
+    margin-bottom: 18rpx;
+}
+.dianzanBtn{
+    font-size: 26rpx;
+    color: white;
+    background-color: #f7534f;
+    width: 178rpx;
+	height: 57rpx;
+    text-align: center;
+    /* line-height: 57rpx; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dianzanBtn image{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+.foo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 115rpx;
+    margin-top: 25rpx;
+}
+.foo .foo_b{
+    width: 178rpx;
+	height: 57rpx;
+    padding: 0;
+    margin: 0;
+
+	/* border-radius: 8px; */
+	border: solid 1rpx #333333;
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    justify-content: center;
+}
