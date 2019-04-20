@@ -1,50 +1,57 @@
 <view class="index_nav">
-	<view class="index_nav_item">全部</view>
-	<view class="index_nav_item clickNav">推荐</view>
-	<view class="index_nav_item">热榜</view>
-	<view class="index_nav_item">就业</view>
-	<view class="index_nav_item">职场</view>
-	<view class="index_nav_item_op">
+	<!-- 此处增加了点击事件与逻辑 -->
+	<view s-for="item,index in nav" data-index="{{index}}" bindtap="clickNav" class="index_nav_item {{index == navClickIndex ? 'clickNav':'' }}">{{item.title}}</view>
+	<view class="index_nav_item_op" style="left:{{navClickIndex * 20}}%">
 		<view class="solid_top"></view>
 	</view>
+	<!-- 此处增加了点击事件与逻辑 -->
 </view>
+<!-- 增加了渲染假数据，和nav点击联动 -->
+<block s-for="item,index in nav">
+	<!-- 此处判断根据索引展示对应的navclickindex索引 -->
+	<view class="bottomBox" s-if="index == navClickIndex">
+		<view class="swiperBox">
 
-<view class="swiperBox">
-	<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
-		<block s-for="imgUrl in imgs">
-			<swiper-item>
-				<image src="{{imgUrl}}" class="slide-image" />
-			</swiper-item>
-		</block>
-	</swiper>
-</view>
-
-<!-- item -->
-<view class="index_list_item_father">
-	<block s-for="item in listContent">
-		<view class="list_item">
-			<view class="list_item_left">
-				<view class="list_item_left_title">实习只在乎工资？那还是早点回家卖红薯吧</view>
-				<view class="list_item_left_clickMsg">
-					<view>04-16</view>
-					<view class="clickZan ml65">
-						<image s-if="item % 2 " class="clickZanIcon" src="../../images/CombinedShapeNone.png"></image>
-						<image s-else class="clickZanIcon" src="../../images/CombinedShape.png"></image>
-						<text>183评论</text>
-					</view>
-					<view class="ml94">183评论</view>
-				</view>
-			</view>
-			<view class="list_item_right">
-				<image  src="http://img.52z.com/upload/news/image/20180419/20180419051254_75804.jpg"></image>
-			</view>
+			<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+				<block s-for="imgUrl in imgs">
+					<swiper-item>
+						<image src="{{imgUrl}}" class="slide-image" />
+					</swiper-item>
+				</block>
+			</swiper>
 		</view>
-	</block>
-</view>
-<!-- item -->
+
+		<!-- item -->
+		<view class="index_list_item_father">
+			<block s-for="listContentItem in listContent">
+				<view class="list_item">
+					<view class="list_item_left">
+						<view class="list_item_left_title">{{item.title}}实习只在乎工资？那还是早点回家卖红薯吧</view>
+						<view class="list_item_left_clickMsg">
+							<view>04-16</view>
+							<view class="clickZan ml65">
+								<image s-if="item % 2 " class="clickZanIcon" src="../../images/CombinedShapeNone.png"></image>
+								<image s-else class="clickZanIcon" src="../../images/CombinedShape.png"></image>
+								<text>183评论</text>
+							</view>
+							<view class="ml94">183评论</view>
+						</view>
+					</view>
+					<view class="list_item_right">
+						<image src="http://img.52z.com/upload/news/image/20180419/20180419051254_75804.jpg"></image>
+					</view>
+				</view>
+			</block>
+		</view>
+		<!-- item -->
+	</view>
+
+</block>
+<!-- 增加了渲染假数据，和nav点击联动 -->
+
 
 <!--loding -->
 <view class="lodingContent">
-    <image class="lodingImage" src="../../images/loding.png"></image>
+	<image class="lodingImage" src="../../images/loding.png"></image>
 </view>
 <!--loding -->

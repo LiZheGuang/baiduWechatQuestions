@@ -72,7 +72,8 @@
     /* background: red; */
     position: absolute;
     bottom: 0;
-    left: 20%;
+    left: 0;
+    transition: left .5s ease;
 
 }
 .solid_top{

@@ -6,6 +6,12 @@ const app = getApp()
 
 Page({
     data: {
+        nav:[{
+            title:"推荐"
+        },{
+            title:"热榜"
+        }],
+        navClickIndex:0,
         userInfo: {},
         hasUserInfo: false,
         canIUse: swan.canIUse('button.open-type.getUserInfo'),
@@ -44,5 +50,13 @@ Page({
                 });
             }
         });
-    }
+    },
+    clickNav(data){
+        console.log(data)
+        let index = data.currentTarget.dataset.index
+        console.log(index)
+        this.setData({
+            navClickIndex:index
+        })
+    },
 })

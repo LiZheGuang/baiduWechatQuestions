@@ -8,11 +8,16 @@
 			最佳答案
 		</view>
 		<view class="clarity_msg">
-			<view class="text_msg  {{optimumShow ? '' :'hideCss'}}" style=" max-height:{{optimumShow?optimumsHeight:'120rpx'}}" id="optimum">
+			<!-- // 17:18修改 -->
+			<view class="text_msg  {{optimumShow ? '' : msg.length >= 20 ?'hideCss' :''}}" style=" max-height:{{optimumShow?optimumsHeight:'120rpx'}}"
+			 id="optimum">
 				{{msg}}
 			</view>
+			<!-- // 17:18修改 -->
 			<view class="right_msg" bindtap="clickOptimumMsg" s-if="!optimumShow">
-				<view class="readMore">查看全文</view>
+				<!-- // 17:18修改 -->
+				<view class="readMore" s-if="{{msg.length >= 20}}">查看全文</view>
+				<!-- // 17:18修改 -->
 			</view>
 			<view class="right_msg timeFather">
 				<view class="timeClarity">2019-04-16 14:47</view>
